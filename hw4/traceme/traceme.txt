@@ -1,0 +1,40 @@
+gdb trace2
+ni
+si
+run
+disas
+until 跳離一個while for迴圈
+continue 中斷後繼續跑
+p output
+display output
+b main
+b *addr
+
+
+--------
+If specified, allows overriding the output format used by the command. Valid format specifiers are:
+o - octal
+x - hexadecimal
+d - decimal
+u - unsigned decimal
+t - binary
+f - floating point
+a - address
+c - char
+s - string
+i - instruction
+The following size modifiers are supported:
+b - byte
+h - halfword (16-bit value)
+w - word (32-bit value)
+g - giant word (64-bit value)
+
+ex:
+x/gx testArray
+x/s testArray
+x/5bx testArray
+
+基本 gdb
+http://www.study-area.org/cyril/opentools/opentools/x1253.html
+gdb print cmd
+https://visualgdb.com/gdbreference/commands/x

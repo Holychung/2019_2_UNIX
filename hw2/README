@@ -1,0 +1,27 @@
+# monitored functions list:
+chdir 
+chmod 
+chown 
+creat 
+fopen 
+link 
+mkdir 
+open 
+openat 
+opendir 
+readlink 
+remove 
+rename 
+rmdir 
+__xstat 
+symlink 
+unlink
+
+# reject functions:
+execl 
+execle 
+execlp 
+execv 
+execve 
+execvp 
+system

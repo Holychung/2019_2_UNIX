@@ -1,0 +1,5 @@
+gcc -o sandbox -Wall sandbox.c
+
+gcc -o sandboxso.so -shared -fPIC sandboxso.c -ldl
+
+LD_PRELOAD=/home/holy/hw2/sandboxso.so ./sandbox
